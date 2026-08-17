@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: pod-limit-and-quota
+  namespace: test
+spec:
+  hard: 
+    requests.cpu: "500m"
+    requests.memory: "5Gi"
+    limits.cpu: "500m"
+    limits.memory: "5Gi"
+
+
+
+
